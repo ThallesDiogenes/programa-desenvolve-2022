@@ -1,0 +1,168 @@
+
+body {
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 70px 0;
+    width: 100%;
+    max-height: 100vh;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: darkorange; */
+    background-image: url(../img/ilustracao2.jpg);
+    background-position: center center;
+    background-repeat: repeat-x; 
+}
+
+#titulo {
+    position: absolute;
+    color: black;
+    font-family: 'Charmonman', cursive;
+    font-size: 40px;
+    top: 20px;
+}
+
+.bg-div {
+    background-color: rgba(173, 216, 230, 0.795);
+    width:100%;
+    min-height: 485px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bg-section {
+    background-color: rgb(50, 135, 204);
+    border-radius: 2px;
+    padding: 35px 30px 15px;
+    display: grid;
+    grid-template: "input1 input2 btn";
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), inset 0px 50px 30px rgba(255, 255, 255, 0.1);
+    column-gap: 20px;
+}
+
+.titulo {
+    font-weight: bold;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    top: -76px;
+}
+
+#usuario {
+    grid-area: input1;
+    width: 200px;
+}
+
+input[type="text"] {
+    font-size: 13px;
+    font-style: italic;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    padding-left: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
+}
+
+input[type="text"]:focus {
+    transform: scale(1.05) translateX(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.17);
+    background-color:floralwhite;
+    color: lightslategray;
+}
+
+#telefone {
+    grid-area: input2;
+    width: 200px;
+}
+
+input[type="tel"] {
+    font-size: 13px;
+    font-style: italic;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    padding-left: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
+}
+
+input[type="tel"]:focus {
+    transform: scale(1.05) translateX(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.17);
+    background-color:floralwhite;
+    color: lightslategray;
+}
+
+.btn {
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: lightsalmon;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    color: white;
+    transform: scale(1.2);
+    background-color:  lightgreen;
+}
+
+.btn:active {
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.07);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#btnAdd {
+    grid-area: btn;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0px 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+input[type="checkbox"] {
+    margin: 0 15px;
+}
+
+ion-icon {
+    transform: scale(1.7);
+    border-radius: 50%;
+    color: lightcoral;
+}
+
+ion-icon:hover {
+    transform:scale(2.1);
+    background-color: lightcoral;
+    color: white;
+    border-radius: 50%;
+}
+
+ion-icon:active {
+    transform:scale(1.9);
+    background-color: lightcoral;
+    color: white;
+    border-radius: 50%;
+}

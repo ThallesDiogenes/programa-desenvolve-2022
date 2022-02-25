@@ -1,0 +1,36 @@
+body {
+    color: #1d1d1d;
+    background-color: #800080;
+
+}
+a{
+    color: #1b1b1b;
+}
+
+main {
+    background-color: #ba55d3;
+}
+
+input{
+    background-color:#f0f0f0;
+    border: #1b1b1b;
+}
+
+input::placeholder{
+    color: #111;
+}
+form button{
+    color: #FFF;
+    background-color:#1b1b1b;
+}
+
+form button:hover{
+    color: #FFF;
+    background-color:#505050;
+}
+
+@media (max-width: 480px){
+    body{
+        background-color: #e4e4e4;
+    }
+}

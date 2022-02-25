@@ -1,0 +1,40 @@
+@media(max-width: 929px) {
+    .lista {
+        width: 70%;
+    }
+}
+
+@media(max-width: 689px) {
+    .bg-div {
+        grid-template: "input" "btn";
+        row-gap: 10px;
+    }
+}
+
+@media(max-width: 549px) {
+    body {
+        padding: 0;
+        align-items: baseline;
+    }
+    .lista {
+        width: 100%;
+        min-height: 100vh;
+        margin-top: 170px
+    }
+    .bg-div {
+        position: fixed;
+        z-index: 1;
+    }
+    input[type="text"]:focus {
+        transform: scale(1) translateX(0px);
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    }
+    .btn:hover {
+        transform: scale(1) translateX(0px);
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    }
+    .btn:active {
+        transform: scale(0.98);
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.0); 
+    }
+}

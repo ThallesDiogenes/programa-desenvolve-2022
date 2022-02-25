@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./estilo1.css">
+    <link rel="stylesheet" href="./estilo2.css">
+    <script src="script.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container_total">
+        <div class="container_principal">
+            <main>
+                <div>
+                    <h1>Entrar</h1>
+                    <p>Insira seu e-mail e senha para acessar</p>
+                </div>
+                <form name="form" id="form">
+                    
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" class="email" placeholder="Insira seu e-mail">
+                        <small>Error message</small>
+
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Insira sua senha">
+                        <small>Error message</small>
+                    </div>
+                    
+                    <div>
+                        <label>
+                            <input type="checkbox" class="box" value="remember-me" > 
+                            <p class="lembrar">Lembrar-me</p> 
+                        </label>
+                    </div>
+
+                    <a href="#">Esqueci a senha</a>
+
+                    <button id="botao_form" type="button" name="submit" value="submit" onclick="direcionamento();">Entrar</button>
+                    <p>Não tem uma conta ainda?<a href="form.html">Crie uma agora!</a></p>
+                    
+                    <script src="./loadingHome.js"></script>
+                    <script src="./teste.js"></script>
+
+                </form>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

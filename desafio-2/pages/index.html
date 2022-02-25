@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista telefônica</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <link rel="stylesheet" href="../styles/classesCriadas.css">
+    <link rel="stylesheet" href="../styles/responsividade.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script src="../js/mascaraTelefone.js"></script>
+    <script src="../js/apagar.js"></script>
+    <script src="../js/addNaLista.js"></script>
+    <script src="../js/listaSemRepeticao.js"></script>
+    <script src="../js/render.js"></script>
+    <script src="../js/telefone-repetido.js"></script>
+</head>
+<body>
+    <p id="titulo">Lista telefônica</p>
+    <main>
+        <div class="bg-div">
+            <section class="bg-section">
+                <label for="usuario" class="titulo">contato</label>
+                <input type="text" id="usuario" placeholder="Nome completo">
+    
+                <label for="telefone" class="titulo">telefone</label>
+                <input type="tel" id="telefone" maxlength="15" placeholder=" DDD + n° do Telefone">
+    
+                <button class="btn" id="btnAdd">Salvar</button>
+            </section>
+            <section class="lista" id="minhaLista">
+            </section>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="../js/global.js"></script>
+</body>
+</html>

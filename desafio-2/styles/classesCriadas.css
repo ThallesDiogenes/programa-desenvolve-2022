@@ -1,0 +1,75 @@
+
+.d-grid {
+    display: grid;
+}
+
+.d-block {
+    display: block;
+}
+
+.y-center {
+    justify-content: center;
+}
+
+.x-center {
+    align-items: center;
+}
+
+.linha {
+    width: 90%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+    background-color:floralwhite;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.linha:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+
+.linha-checked {
+    width: 90%;
+    box-shadow: 0px 0px 20px -15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+}
+
+.label {
+    justify-content: start;
+    width: 80%;
+    word-wrap: break-word;
+}
+
+.label label {
+    display: block;
+    width: 100%;
+    padding: 20px 30px 20px 0px;
+}
+
+.btnExcluir {
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: orangered;
+    transition: 0.5s ease-in-out;
+}
