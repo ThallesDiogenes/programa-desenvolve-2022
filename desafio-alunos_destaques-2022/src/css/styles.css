@@ -1,0 +1,503 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #6ddad3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #132235;
+  padding: 15px 0;
+  height: 60px;
+}
+
+img {
+  width: 280px;
+  height: 80px;
+  object-fit: cover;
+  object-position: 20px 50%;
+}
+
+nav {
+  position: absolute;
+  top: 34px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 40px 0 10px;
+  font-size: 24px;
+  color: white;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}
+
+li a:hover {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #6ddad357;
+}
+
+.entrar {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #6ddad3;
+}
+
+.entrar:hover {
+  border: 2px solid white;
+  font-weight: 500;
+  background-color: #6ddad3;
+  color: #132235;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.container-carrossel {
+  height: 100vh;
+  background: white;
+}
+
+.galeria {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  width: 60%;
+  height: 75%;
+  overflow: hidden;
+}
+
+.galeria .fotos {
+  width: 500%;
+  animation-name: animacao;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.galeria .fotos img {
+  width: 20%;
+  height: 400px;
+  margin: 30px 0;
+  padding-right: 10px;
+}
+
+@keyframes animacao {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  95% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -400%;
+  }
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 0;
+  background-color: #132235;
+  width: 400px;
+  position: absolute;
+  top: 130px;
+  right: 50px;
+}
+
+.endereco {
+  margin-bottom: 10px;
+}
+
+.botao-form1 {
+  padding: 15px 0;
+}
+
+#voltar-ao-topo {
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  font-size: 14px;
+  width: 150px;
+}
+
+.container-quem-somos {
+  height: 100vh;
+  background-image: url("../img/imobiliarias.jpg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: -15px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  outline: none;
+  padding: 15px;
+  margin: 10px 0 0;
+  padding: 20px 0 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.div-texto {
+  text-align: justify;
+  margin: 11px 0px 50px 668px;
+  padding: 0 10px 27px;
+  border: none;
+  background-color: #132235;
+  color: white;
+}
+
+p {
+  padding: 38px 0;
+}
+
+.texto {
+  margin: 0 40px;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.container-produtos {
+  height: 100vh;
+  background-color: white;
+}
+.produtos-descricao {
+  display: flex;
+  justify-content: space-around;
+}
+
+.moradia-compartilhada {
+  background-color: #132235;
+  border: none;
+  border-radius: 20px;
+  width: 40%;
+  height: 500px;
+  margin: 10px 30px;
+}
+
+.moradia-compartilhada:hover {
+  transform: scale(0.95);
+  transition: 0.5s ease-in-out;
+}
+
+.opcao {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  font-size: 24px;
+  color: white;
+  margin: 0 40px;
+  font-weight: bold;
+}
+
+.descricao2 {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  font-size: 24px;
+  color: #132235;
+  margin: 0 60px;
+  font-weight: bold;
+}
+
+.foto {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -290px;
+  left: 0px;
+  height: 360px;
+  width: 485px;
+  margin: 10px 20px;
+  opacity: 0.2;
+}
+
+.foto2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -290px;
+  height: 360px;
+  width: 485px;
+  margin: 10px 20px;
+  opacity: 0.2;
+}
+
+.kitnet {
+  background-color: #6ddad3;
+  border: none;
+  border-radius: 20px;
+  width: 40%;
+  height: 500px;
+  margin: 10px 30px;
+}
+
+.kitnet:hover {
+  transform: scale(0.95);
+  transition: 0.5s ease-in-out;
+}
+
+.container-fale-conosco {
+  height: 100vh;
+}
+
+.container-fale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #132235;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 0 60px;
+  margin: 20px 450px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 300px;
+}
+
+label {
+  padding: 30px 0 10px;
+  color: white;
+  font-size: 20px;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+input:focus,
+textarea:focus {
+  transform: scale(1.05) translateY(5px);
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 0px 6px 4px rgba(255, 255, 255, 0.3);
+}
+
+.email,
+.endereco {
+  padding: 10px;
+}
+
+textarea {
+  margin-bottom: 40px;
+}
+
+.botao-form,
+#botao_form1 {
+  padding: 14px 0;
+  border: 2px solid #6ddad3;
+  border-radius: 40px;
+  width: 200px;
+  margin: 0 50px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #132235;
+  cursor: pointer;
+}
+
+.botao-form:hover,
+.botao-form1:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+  background-color: #6ddad3;
+  border: 2px solid white;
+  color: #132235;
+}
+
+.botao-form:active,
+.botao-form1:active {
+  transform: scale(1);
+  transition: 0.1s ease-in-out;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.linha {
+  font-size: 16px;
+  width: 35%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s ease-in-out;
+  background-color: rgba(255, 250, 240, 0.4);
+  opacity: 0.9;
+  border-radius: 5px;
+  position: absolute;
+  top: 2535px;
+  right: 430px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.linha:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.linha-checked {
+  width: 90%;
+  box-shadow: 0px 0px 20px -15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s ease-in-out;
+}
+
+.btnExcluir {
+  border: none;
+  background-color: transparent;
+  margin-right: 40px;
+  outline: none;
+  cursor: pointer;
+}
+
+.label {
+  justify-content: start;
+  width: 80%;
+  word-wrap: break-word;
+}
+
+.label label {
+  display: block;
+  width: 100%;
+  padding: 14px 30px 14px 0px;
+}
+
+input[type="checkbox"] {
+  margin: 0 15px;
+}
+
+ion-icon {
+  transform: scale(1.7);
+  border-radius: 50%;
+  color: lightcoral;
+}
+
+ion-icon:hover {
+  transform: scale(2.1);
+  background-color: lightcoral;
+  color: white;
+  border-radius: 50%;
+}
+
+ion-icon:active {
+  transform: scale(1.9);
+  background-color: lightcoral;
+  color: white;
+  border-radius: 50%;
+}
+
+.rodape {
+  height: 180px;
+  background-color: #132235;
+}
+
+.direitos {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+}
+
+.midia {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 16px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+.fa-twitter {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.fa-linkedin {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.fa-facebook {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}

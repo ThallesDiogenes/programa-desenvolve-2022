@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>F4Life</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script src="../js/render.js"></script>
+  </head>
+  <body class="container">
+    <header>
+      <section>
+        <img src="../img/f4life.png" alt="Logotipo-F4Life" />
+        <nav>
+          <ul>
+            <li><a href="#quem-somos">Quem somos</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#fale-conosco">Fale conosco</a></li>
+            <li class="entrar">Entrar</li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="container-carrossel">
+        <section class="galeria">
+          <div class="fotos">
+            <img src="../img/foto1.jpg" alt="foto1" />
+            <img src="../img/foto2.png" alt="foto2" />
+            <img src="../img/foto3.jpg" alt="foto3" />
+            <img src="../img/foto1.jpg" alt="foto1" />
+          </div>
+        </section>
+        <section class="buscador">
+          <form name="form1" id="form1">
+            <label for="endereco">Cidade</label>
+            <input
+              id="endereco"
+              type="endereco"
+              name="endereco"
+              class="endereco"
+              placeholder="Digite a cidade"
+            />
+
+            <label for="email">Bairro</label>
+            <input
+              id="endereco"
+              type="endereco"
+              name="endereco"
+              class="endereco"
+              placeholder="Digite o bairro"
+            />
+
+            <label for="endereco">Tipo de moradia</label>
+            <input
+              id="endereco"
+              type="endereco"
+              name="endereco"
+              class="endereco"
+              placeholder="Digite o tipo de moradia"
+            />
+
+            <button id="botao_form1" class="botao-form1" disabled>
+              Procurar
+            </button>
+          </form>
+        </section>
+      </section>
+
+      <section class="container-quem-somos" id="quem-somos">
+        <h1>Quem somos</h1>
+        <div class="div-texto">
+          <p class="texto">
+            F4Life é uma empresa especializada em aluguéis de moradias
+            universitários, destacando-se nos seguimentos de moradia
+            compartilhada e Kitnets. Similar aos modelos de Quinto Andar e Loft,
+            a empresa realiza reformas e prepara as moradias para a recepção dos
+            universitários em um ambiente totalmente direcionado e otimizado
+            para a vida acadêmica. <br />
+            A F4Life conta com profissionais qualificados que realizam o
+            acompanhamento dos universitários visando sempre melhorar o
+            atendimento e proporcionar uma excelente experiência.
+          </p>
+          <button id="voltar-ao-topo" class="botao-form">Voltar ao topo</button>
+        </div>
+      </section>
+
+      <section class="container-produtos" id="produtos">
+        <h1>Produtos</h1>
+        <section class="produtos-descricao">
+          <div class="moradia-compartilhada">
+            <p class="opcao">Moradia compartilhada</p>
+            <p class="descricao">
+              Confira as vantagens desta opção:
+            </p>
+            <ul class="descricao">
+              <li>Quartos individuais e compartilhados;</li>
+              <li>Tarefas domésticas reduzidas;</li>
+              <li>Ambiente descontraído;</li>
+              <li>Custos reduzidos;</li>
+            </ul>
+            <img
+              src="../img/moradia.jpg"
+              alt="Figura-moradia-compartilhada"
+              class="foto"
+            />
+          </div>
+          <div class="kitnet">
+            <p class="opcao">Apartamento Kitnet</p>
+            <p class="descricao2">
+              Confira as vantagens desta opção:
+            </p>
+            <ul class="descricao2">
+              <li>Moradia individual;</li>
+              <li>Mobília projetada;</li>
+              <li>Ambiente calmo;</li>
+              <li>Custos moderados;</li>
+            </ul>
+            <img src="../img/kitnet.png" alt="Figura-kitnet" class="foto2"
+          </div>
+        </section>
+      </section>
+
+      <section class="container-fale-conosco" id="fale-conosco">
+        <h1 class="titulo">Fale conosco</h1>
+        <div class="container-fale">
+          <form name="form" id="form">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              class="email"
+              placeholder="Insira seu e-mail"
+            />
+
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              cols="70"
+              rows="10"
+              id="mensagem"
+              class="input-padrao"
+              required
+            ></textarea>
+
+            <button
+              id="botao_form"
+              class="botao-form"
+              type="button"
+              name="submit"
+              value="submit"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+        <div class="resposta" id="minha-resposta"></div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p class="direitos">
+        &copy; 2022 F4Life Moradias Universitárias - Todos os direitos
+        reservados.
+      </p>
+      <section class="midia">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://twitter.com/"
+          class="fa fa-twitter"
+        >
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/"
+          class="fa fa-linkedin"
+        >
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.facebook.com/"
+          class="fa fa-facebook"
+        >
+        </a>
+      </section>
+    </footer>
+    <script src="../js/topo.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
